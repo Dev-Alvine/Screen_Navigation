@@ -6,6 +6,7 @@
 
 ## Instructions
 1. Fork this repository and clone it on your machine
+2. Open the project on your Android Studio
 2. After it finish setting up
 3. Add the compose navigation dependency
 4. Create three screens: 
