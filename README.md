@@ -5,7 +5,7 @@
 - Be able to pass arguments between screens
 
 ## Instructions
-1. Fork this repository and clone into on your machine
+1. Fork this repository and clone it on your machine
 2. After it finish setting up
 3. Add the compose navigation dependency
 4. Create three screens: 
