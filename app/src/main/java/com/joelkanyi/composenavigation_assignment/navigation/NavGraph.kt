@@ -31,8 +31,8 @@ fun NavGraph(navController: NavHostController) {
         composable(route= Screen.Rating.route,
             arguments= listOf(
                 navArgument(name = ID){
-                    type= NavType.IntType
-                    defaultValue=-1
+                    type= NavType.FloatType
+                    defaultValue=1f
                 }
             )
         )
@@ -40,7 +40,7 @@ fun NavGraph(navController: NavHostController) {
 
             Rating_Screen(
                 navController = navController,
-               id = it.arguments?.getInt(ID) ?:-1
+               id = it.arguments?.getFloat(ID) ?:1f
             )
         }
     }

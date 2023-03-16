@@ -58,7 +58,7 @@ fun Detail_Screen(
             Button(
 
                 onClick = {
-                    navController.navigate(Screen.Rating.route)
+                    navController.navigate(Screen.Rating.passArgument(5.0f))
                 }
             ) {
                 Text(text = "Rate Us")

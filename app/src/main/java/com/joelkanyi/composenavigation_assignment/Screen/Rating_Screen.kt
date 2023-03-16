@@ -21,7 +21,7 @@ import androidx.navigation.NavController
 @Composable
 fun Rating_Screen(
 
-    id:Int,
+    id:Float,
     navController: NavController
 ) {
     Scaffold(

@@ -9,7 +9,7 @@ sealed class Screen(val route: String) {
 
     object Rating: Screen(route = "Rating_Screen/{$ID}")
     {
-        fun  passArgument(id: Int):String{
+        fun  passArgument(id: Float):String{
             return "Rating_Screen/$id"
         }
     }
