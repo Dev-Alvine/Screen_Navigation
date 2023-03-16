@@ -21,7 +21,7 @@ fun Home_Screen(
     ) {
         Button(
             onClick = {
-                navController.navigate(Screen.ScreenB.route)
+                navController.navigate(Screen.Detail.route)
             }) {
             Text(text = "Go to Detail Screen")
         }

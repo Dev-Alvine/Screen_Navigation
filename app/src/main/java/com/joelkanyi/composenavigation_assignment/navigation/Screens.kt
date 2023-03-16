@@ -1,10 +1,18 @@
 package com.joelkanyi.composenavigation_assignment.navigation
 
-sealed class Screen(val route: String) {
-    object ScreenA : Screen(route = "Home_screen")
-    object ScreenB: Screen(route = "Detail_Screen")
+import java.net.IDN
 
-    object ScreenC: Screen(route = "Rating_Screen")
+const val ID ="id"
+sealed class Screen(val route: String) {
+    object Home : Screen(route = "Home_screen")
+    object Detail: Screen(route = "Detail_Screen")
+
+    object Rating: Screen(route = "Rating_Screen/{$ID}")
+    {
+        fun  passArgument(id: Int):String{
+            return "Rating_Screen/$id"
+        }
+    }
 
     }
 

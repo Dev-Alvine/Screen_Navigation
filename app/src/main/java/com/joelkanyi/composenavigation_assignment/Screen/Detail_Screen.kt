@@ -50,14 +50,15 @@ fun Detail_Screen(
     ) {
         Box(
             Modifier.fillMaxSize(),
-            contentAlignment = Alignment.TopStart
+            contentAlignment = Alignment.Center
         ) {
-            Text(text = "This is the Detail Screen")
-            Spacer(modifier = Modifier.height(10.dp))
+            //Text(text = "This is the Detail Screen")
+            Spacer(modifier = Modifier.height(20.dp))
 
             Button(
+
                 onClick = {
-                    navController.navigate(Screen.ScreenC.route)
+                    navController.navigate(Screen.Rating.route)
                 }
             ) {
                 Text(text = "Rate Us")

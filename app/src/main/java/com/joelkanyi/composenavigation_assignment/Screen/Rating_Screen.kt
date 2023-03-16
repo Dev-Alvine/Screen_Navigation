@@ -21,6 +21,7 @@ import androidx.navigation.NavController
 @Composable
 fun Rating_Screen(
 
+    id:Int,
     navController: NavController
 ) {
     Scaffold(
@@ -47,7 +48,7 @@ fun Rating_Screen(
             Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
-            Text(text = "Rate Us *4.5 ", fontWeight= FontWeight.ExtraBold)
+            Text(text = "Rate Us $id", fontWeight= FontWeight.ExtraBold)
         }
     }
 }
